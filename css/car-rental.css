@@ -1,0 +1,56 @@
+.d2 {
+        width: 50%;
+}
+.d1 {
+  
+}
+.d1-safe-car-rental-top {
+        font-family: Ubuntu, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #f6c43d; 
+    margin-bottom: 30px;
+    margin-left: 25px;
+}
+.d1-safe-car-rental-head {
+        font-family: "Barlow Condensed", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #222;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+.d1-safe-car-rental-p1 {
+        font-size: 18px;
+        font-weight: 700;
+        color:#222;
+        margin-left: 25px;
+        margin-bottom: 30px;  
+}
+#grey-text {
+        font-size: 17px;
+        font-weight: 400;
+        color:#898989;
+        margin-left: 25px;
+        margin-bottom: 80px;
+        max-width: 100%;
+         
+}
+.contact_buttom {
+        font-size: 16,5px;
+    font-weight: 700;
+    color: #fff;
+    font-stretch: 100%;
+    background-color: var(--main-blue);
+    padding: 15px 15px ;
+    border-radius: 30px;
+    margin-left: 25px;
+    position: relative;
+    width: 170px;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.contact_buttom:hover {
+        background-color: var(--top-heading-color); 
+    }
