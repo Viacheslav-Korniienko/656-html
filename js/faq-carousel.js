@@ -16,14 +16,18 @@ slideContainer.innerHTML = slides[currentSlide];
 }
 
 function nextSlide() {
-    currentSlide++;
-    if (currentSlide >= slides.length) currentSlide = 0;
+    currentSlide = currentSlide + 1 >= slides.length ? 0 : currentSlide + 1;
     showCurrentSlide();
 }
 
-setInterval(nextSlide, 1000);
+function prevSlide() {
+    currentSlide = currentSlide - 1 <= 0 ? slides.length - 1 : currentSlide - 1;
+    showCurrentSlide();
+}
+
 showCurrentSlide();
 
-//document.querySelector('button.faq-content-carousel-slide-button.forvard').addEventListener('click', nextSlide);
-//document.querySelector('button.products-carousel__button.forward').addEventListener('click', nextSlide);
+document.querySelector('button.faq-content-carousel-slide-button.forvard').addEventListener('click', nextSlide);
+document.querySelector('button.faq-content-carousel-slide-button.back').addEventListener('click', prevSlide);
+window.addEventListener('resize', showCurrentSlide); 
 })();
